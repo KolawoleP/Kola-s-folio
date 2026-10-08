@@ -1322,6 +1322,29 @@ a.card:hover .card__media img {
   padding-left: 45px;
 }
 
+/* Photos: same centred 976px column and side padding as the case studies */
+.main:has(.gallery) {
+  max-width: none;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.main:has(.gallery) .page-header,
+.main:has(.gallery) .gallery {
+  max-width: 976px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main:has(.gallery) .page-header__title,
+.main:has(.gallery) .page-header__text {
+  margin-left: 0;
+}
+
+.main:has(.gallery) .gallery {
+  margin-top: 49px;
+}
+
 .cs {
   position: relative;
   max-width: 976px;
@@ -2529,6 +2552,7 @@ a.work-card:focus-visible {
   }
 
   .main:has(.cs, .work-page),
+  .main:has(.gallery),
   .main:has(.hero) {
     padding: 0 16px;
   }
