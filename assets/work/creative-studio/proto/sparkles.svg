@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#240;&#159;&#140;&#174; sparkles" clip-path="url(#clip0_0_726)">
+<g id="Vector">
+</g>
+<path id="Vector_2" d="M11.5636 6.47274L12.2 5.07274L13.6 4.43637L12.2 3.80001L11.5636 2.40001L10.9273 3.80001L9.52727 4.43637L10.9273 5.07274L11.5636 6.47274ZM7.74545 6.72728L6.47273 3.92728L5.2 6.72728L2.4 8.00001L5.2 9.27274L6.47273 12.0727L7.74545 9.27274L10.5455 8.00001L7.74545 6.72728ZM11.5636 9.52728L10.9273 10.9273L9.52727 11.5636L10.9273 12.2L11.5636 13.6L12.2 12.2L13.6 11.5636L12.2 10.9273L11.5636 9.52728Z" fill="url(#paint0_linear_0_726)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_726" x1="13.6" y1="2.40001" x2="1.68298" y2="12.7765" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EF1F00"/>
+<stop offset="0.5" stop-color="#DF1067"/>
+<stop offset="1" stop-color="#EF00E8"/>
+</linearGradient>
+<clipPath id="clip0_0_726">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

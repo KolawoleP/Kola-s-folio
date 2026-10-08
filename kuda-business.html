@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuda Business banking — Kola Popoola</title>
+  <meta name="description" content="Case study: designing Kuda Business, a digital business bank for payments, invoicing and managing multiple accounts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Hold the page hidden until main.js sets up the scroll reveal (shown anyway after 3s as a fallback)
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("reveal-pending");
+      setTimeout(function () { document.documentElement.classList.remove("reveal-pending"); }, 3000);
+    }
+  </script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <img src="assets/icons/logo.svg" width="37" height="36" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Kola Popoola</span>
+          <span class="brand__role">Software Designer</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <a class="nav__item" href="index.html">
+          <img src="assets/icons/nav-home-inactive.svg" width="15" height="16" alt="" />
+          Home
+        </a>
+        <a class="nav__item is-active" href="work.html" aria-current="true">
+          <img src="assets/icons/nav-work-active.svg" width="16" height="16" alt="" />
+          Work
+        </a>
+        <a class="nav__item" href="about.html">
+          <img src="assets/icons/nav-about.svg" width="16" height="17" alt="" />
+          About
+        </a>
+        <a class="nav__item" href="photos.html">
+          <img src="assets/icons/nav-photos.svg" width="17" height="15.2564" alt="" />
+          Photos
+        </a>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__social">
+          <a class="sidebar__icon-link" href="mailto:kolapopoola4@gmail.com" aria-label="Email Kola" data-tooltip="kolapopoola4@gmail.com">
+            <img src="assets/icons/mail.svg" width="20" height="14" alt="" />
+          </a>
+          <a class="sidebar__icon-link" href="https://www.linkedin.com/in/kola-popoola-b61664143/" target="_blank" rel="noopener" aria-label="Kola on LinkedIn" data-tooltip="LinkedIn ↗">
+            <img src="assets/icons/linkedin.svg" width="18" height="18" alt="" />
+          </a>
+          <a class="sidebar__icon-link" href="assets/resume/Kola-Popoola-Resume.pdf" download="Kola-Popoola-Resume.pdf" aria-label="Download Kola's resume (PDF)" data-tooltip="Download resume ↓">
+            <img src="assets/icons/resume.svg" width="13" height="19" alt="" />
+          </a>
+        </div>
+        <p class="clock" aria-label="Current time in Berlin">
+          <span>BER</span><span class="clock__dot">.</span><time data-berlin-clock>21:20</time>
+        </p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <article class="cs">
+        <div class="dots" aria-hidden="true"></div>
+
+        <header class="cs-header">
+          <div class="cs-header__main">
+            <h1 class="cs-header__title">Kuda Business banking v1</h1>
+            <p class="cs-header__date">March 2021 - November 2022</p>
+            <ul class="cs-tags">
+              <li>UX Design</li>
+              <li>UX Research</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+          <p class="cs-header__summary cs-header__summary--regular">A digital business bank that helps business users make payments, create invoices and also manage multiple accounts seamlessly.</p>
+        </header>
+
+        <div class="kuda-hero" role="img" aria-label="Three Kuda Business web screens: add money by transfer, the dashboard, and send money">
+          <div class="kuda-hero__shot kuda-hero__shot--transfer"><img src="assets/work/kuda/hero-add-by-transfer.png" alt="" /></div>
+          <div class="kuda-hero__shot kuda-hero__shot--dashboard"><img src="assets/work/kuda/hero-dashboard.png" alt="" /></div>
+          <div class="kuda-hero__shot kuda-hero__shot--send"><img src="assets/work/kuda/hero-send-money.png" alt="" /></div>
+        </div>
+
+        <dl class="cs-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>Product Designer</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>Web &amp; Mobile App</dd>
+          </div>
+          <div>
+            <dt>Collaborators</dt>
+            <dd>4 Engineers, 2 Product designer, 2 Product manager</dd>
+          </div>
+          <div>
+            <dt>Contributions</dt>
+            <dd>Product design, Research, Information architecture, Interaction design and prototyping</dd>
+          </div>
+        </dl>
+
+        <hr class="cs-divider" />
+
+        <section class="cs-section kuda-first">
+          <h2 class="cs-heading">Brief</h2>
+          <p class="cs-text">Everyday new businesses are formed, whether petty businesses (sole trader) or large scale businesses and a lot of business owners like to separate their personal earnings from that of the business hence they open new bank accounts for the business and with a product like Kuda Business, the goal was to build a business product that satisfies all the banking needs of a business i.e being able to receive and send money, create/seend invoices and also pay bills.</p>
+        </section>
+
+        <section class="cs-section kuda-gap-sm">
+          <h2 class="cs-heading">The challenge</h2>
+          <ul class="cs-bullets">
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Provide a solution for business owners with petty businesses that aren’t registered</li>
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Allow users to be able to track their activities on their business account i.e inflow, outflow</li>
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Provide a solution that allows business owners to send and receive money seamlessly and also pay bills.</li>
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Provide a solution that allows business owners to send out invoices to their customers and be paid directly.</li>
+          </ul>
+        </section>
+
+        <section class="cs-section kuda-gap">
+          <h2 class="cs-heading">Target Audience</h2>
+          <p class="cs-text">Our target audience for this product consists of business owners i.e with petty businesses and registered businesses</p>
+        </section>
+
+        <section class="cs-section kuda-gap">
+          <h2 class="cs-heading">The solution</h2>
+          <p class="cs-text">After the team had gathered the information neccessary, the next step was to work on the user journey hand in hand with the PRD (Product Requirement Documents) given by the product managers, this step helps in streamlining the things the users want to see in the product.</p>
+
+          <figure class="kuda-panel kuda-flow kuda-flow--onboarding">
+            <img src="assets/work/kuda/flow-onboarding.png" width="899" height="160" alt="Onboarding user flow diagram" loading="lazy" />
+          </figure>
+          <p class="kuda-flow-caption">Onboarding Flow</p>
+
+          <figure class="kuda-panel kuda-flow kuda-flow--registration">
+            <img src="assets/work/kuda/flow-business-registration.png" width="892" height="321" alt="Business registration user flow diagram" loading="lazy" />
+          </figure>
+          <p class="kuda-flow-caption">Business registration</p>
+        </section>
+
+        <section class="cs-section kuda-gap">
+          <h2 class="cs-heading">Visual design</h2>
+          <h3 class="kuda-subheading">Style guide</h3>
+          <p class="cs-text kuda-text-tight">Below we have the style guide used to work on the visual design for this product, from the colors (primary &amp; secondary) to the font family, buttons and icons used. NB : Primary colors #FFFFF, #0A0411 and Font family Mulish.</p>
+
+          <div class="kuda-styleguide">
+            <img src="assets/work/kuda/style-colour.png" width="396" height="791" alt="Colour palette: primary, greyscale and accent colours" loading="lazy" />
+            <img src="assets/work/kuda/style-typography.png" width="396" height="850" alt="Typography: Mulish type scale and examples" loading="lazy" />
+            <img src="assets/work/kuda/style-buttons.png" width="396" height="842" alt="Button components: standard and dangerous variants and states" loading="lazy" />
+            <img src="assets/work/kuda/style-icons.png" width="396" height="1184" alt="Icon components: outlined, filled, two-tone, system, business and feedback icons" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="cs-section kuda-gap">
+          <h2 class="cs-heading">Onboarding</h2>
+          <p class="cs-text">For our onboarding process on this product, there are two options, the user can either choose to sign up as a new user or sign up with their existing Kuda “Retail” account, the reason for the first option is for people who do not have existing Kuda Retail accounts.</p>
+          <figure class="kuda-panel kuda-onboarding">
+            <img src="assets/work/kuda/onboarding.png" width="800" height="574" alt="Kuda Business sign up page with Continue with Email and Continue with Kuda options" loading="lazy" />
+          </figure>
+        </section>
+
+        <section class="cs-section kuda-gap">
+          <h2 class="cs-heading">Inputing your details</h2>
+          <p class="cs-text">Once you select to sign up with Email, you are then asked to provide your email alongside other information that will be needed for you to set up your account. The necessary information that will be collected include ;</p>
+          <ul class="cs-bullets cs-bullets--spaced">
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Verifying your ID with a selfie</li>
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Uploading a valid ID card</li>
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Filling a form that tells us more about your business</li>
+          </ul>
+
+          <figure class="kuda-panel kuda-gallery" data-gallery style="--main-w: 732; --main-h: 527">
+            <div class="kuda-gallery__stage">
+              <img class="kuda-gallery__main" src="assets/work/kuda/signup-main.png" alt="Sign up screen 1 of 6" loading="lazy" data-gallery-main />
+            </div>
+            <figcaption>User signs up here with their basic details (Email Address) and password.</figcaption>
+            <div class="kuda-gallery__thumbs" role="group" aria-label="Sign up screens">
+              <button type="button" class="is-active" aria-pressed="true" data-src="assets/work/kuda/signup-main.png"><img src="assets/work/kuda/signup-1.png" alt="Screen 1" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/signup-2.png"><img src="assets/work/kuda/signup-2.png" alt="Screen 2" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/signup-3.png"><img src="assets/work/kuda/signup-3.png" alt="Screen 3" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/signup-4.png"><img src="assets/work/kuda/signup-4.png" alt="Screen 4" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/signup-5.png"><img src="assets/work/kuda/signup-5.png" alt="Screen 5" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/signup-6.png"><img src="assets/work/kuda/signup-6.png" alt="Screen 6" loading="lazy" /></button>
+            </div>
+          </figure>
+        </section>
+
+        <section class="cs-section kuda-gap-md">
+          <h2 class="cs-heading">Sending money</h2>
+          <p class="cs-text">Once you’ve signed up/in and you have access to your account, you can fund the account with your account number given to you and you can also send money to other banks with the following steps :</p>
+          <ul class="cs-bullets cs-bullets--spaced">
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Click on the Payments tab and go to “Send Money”</li>
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Select Transaction type i.e Single Transaction</li>
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Fill in the details of the person you are sending money to i.e Bank, Account Number and Amount</li>
+            <li><img src="assets/work/kuda/bullet.svg" width="11" height="10" alt="" />Send Money</li>
+          </ul>
+
+          <figure class="kuda-panel kuda-gallery" data-gallery style="--main-w: 544; --main-h: 528">
+            <div class="kuda-gallery__stage">
+              <img class="kuda-gallery__main" src="assets/work/kuda/send-main.png" alt="Send money screen 1 of 6" loading="lazy" data-gallery-main />
+            </div>
+            <figcaption>User selects the payment tab and clicks on Send Money</figcaption>
+            <div class="kuda-gallery__thumbs" role="group" aria-label="Send money screens">
+              <button type="button" class="is-active" aria-pressed="true" data-src="assets/work/kuda/send-main.png"><img src="assets/work/kuda/send-1.png" alt="Screen 1" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/send-2.png"><img src="assets/work/kuda/send-2.png" alt="Screen 2" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/send-3.png"><img src="assets/work/kuda/send-3.png" alt="Screen 3" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/send-4.png"><img src="assets/work/kuda/send-4.png" alt="Screen 4" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/send-5.png"><img src="assets/work/kuda/send-5.png" alt="Screen 5" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/send-6.png"><img src="assets/work/kuda/send-6.png" alt="Screen 6" loading="lazy" /></button>
+            </div>
+          </figure>
+        </section>
+
+        <section class="cs-section kuda-gap-md">
+          <h2 class="cs-heading">Invoicing</h2>
+          <p class="cs-text">You can create and send invoices to your customers, and they can pay directly via a bank transfer or via the Kuda payment gateway. You can also create estimates (invoices that cannot be paid) and send to your customers to give an estimate of your service and said estimate can be converted to an invoice.</p>
+
+          <figure class="kuda-panel kuda-gallery kuda-gallery--invoice" data-gallery style="--main-w: 612; --main-h: 512">
+            <div class="kuda-gallery__stage">
+              <img class="kuda-gallery__main" src="assets/work/kuda/invoice-main.png" alt="Invoice screen 1 of 3" loading="lazy" data-gallery-main />
+            </div>
+            <figcaption>List of all the times user added on their invoice</figcaption>
+            <div class="kuda-gallery__thumbs" role="group" aria-label="Invoicing screens">
+              <button type="button" class="is-active" aria-pressed="true" data-src="assets/work/kuda/invoice-main.png"><img src="assets/work/kuda/invoice-1.png" alt="Screen 1" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/invoice-2.png"><img src="assets/work/kuda/invoice-2.png" alt="Screen 2" loading="lazy" /></button>
+              <button type="button" aria-pressed="false" data-src="assets/work/kuda/invoice-3.png"><img src="assets/work/kuda/invoice-3.png" alt="Screen 3" loading="lazy" /></button>
+            </div>
+          </figure>
+        </section>
+
+        <section class="cs-section kuda-gap-lg">
+          <h2 class="cs-heading">Mobile screens</h2>
+          <p class="cs-text">These are some screens from the mobile app.</p>
+
+          <div class="kuda-phones kuda-phones--welcome">
+            <img src="assets/work/kuda/mobile-welcome-2.png" width="280" height="606" alt="Onboarding: 25 free transfers" loading="lazy" />
+            <img src="assets/work/kuda/mobile-welcome-3.png" width="280" height="606" alt="Onboarding: bulk transfers" loading="lazy" />
+            <img src="assets/work/kuda/mobile-welcome-4.png" width="280" height="606" alt="Onboarding: manage team, coming soon" loading="lazy" />
+          </div>
+          <div class="kuda-phones kuda-phones--account">
+            <img src="assets/work/kuda/mobile-landing-signed-in.png" width="280" height="606" alt="Welcome to Kuda Business screen" loading="lazy" />
+            <img src="assets/work/kuda/mobile-personal-details.png" width="280" height="655" alt="Choose account type: stay freelancer or upgrade" loading="lazy" />
+            <img src="assets/work/kuda/mobile-verify-id.jpg" width="280" height="631" alt="Upgrade to a full business account checklist" loading="lazy" />
+          </div>
+          <div class="kuda-phones kuda-phones--banking">
+            <img src="assets/work/kuda/mobile-bank.png" width="280" height="659" alt="Mobile banking home screen" loading="lazy" />
+            <img src="assets/work/kuda/mobile-invoicing.png" width="280" height="606" alt="Mobile invoicing screen" loading="lazy" />
+            <img src="assets/work/kuda/mobile-get-started.png" width="280" height="606" alt="Mobile get started screen" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="cs-section kuda-gap">
+          <h2 class="cs-heading">Challenges &amp; takeaways</h2>
+          <p class="cs-text">This project provided an excellent opportunity to learn about designing for security and ease, a business owner won’t want to keep their money in your bank if they aren’t sure their money is safe and easily accessible whenever they need it, so we had to put that into consideration when designing and optimize for accessibility and easy usage.</p>
+        </section>
+
+        <section class="cs-section cs-section--conclusion">
+          <h2 class="cs-heading">Conclusion and outcome</h2>
+          <p class="cs-text">Kuda Business is a product under Kuda MFB which has over 3 million customers and is currently in it’s expansion phase to the UK and other African country, Kuda Business since it’s launch has helped add to the total Kuda MFB users with over 100,000 customers here in Lagos, Nigeria. As we continue growing more features will be added to satisfy out large and ever increasing customer base.</p>
+        </section>
+      </article>
+
+      <footer class="footer">
+        <p>&copy; Kolawole Popoola 2026</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

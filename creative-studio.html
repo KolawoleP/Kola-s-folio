@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Display Ads - Creative studio — Kola Popoola</title>
+  <meta name="description" content="Case study: enabling Delivery Hero vendors to set up display ad banners themselves, without an account manager." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Host+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="prototypes/creative-studio.css" />
+  <script>
+    // Hold the page hidden until main.js sets up the scroll reveal (shown anyway after 3s as a fallback)
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("reveal-pending");
+      setTimeout(function () { document.documentElement.classList.remove("reveal-pending"); }, 3000);
+    }
+  </script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <img src="assets/icons/logo.svg" width="37" height="36" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Kola Popoola</span>
+          <span class="brand__role">Software Designer</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <a class="nav__item" href="index.html">
+          <img src="assets/icons/nav-home-inactive.svg" width="15" height="16" alt="" />
+          Home
+        </a>
+        <a class="nav__item is-active" href="work.html" aria-current="true">
+          <img src="assets/icons/nav-work-active.svg" width="16" height="16" alt="" />
+          Work
+        </a>
+        <a class="nav__item" href="about.html">
+          <img src="assets/icons/nav-about.svg" width="16" height="17" alt="" />
+          About
+        </a>
+        <a class="nav__item" href="photos.html">
+          <img src="assets/icons/nav-photos.svg" width="17" height="15.2564" alt="" />
+          Photos
+        </a>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__social">
+          <a class="sidebar__icon-link" href="mailto:kolapopoola4@gmail.com" aria-label="Email Kola" data-tooltip="kolapopoola4@gmail.com">
+            <img src="assets/icons/mail.svg" width="20" height="14" alt="" />
+          </a>
+          <a class="sidebar__icon-link" href="https://www.linkedin.com/in/kola-popoola-b61664143/" target="_blank" rel="noopener" aria-label="Kola on LinkedIn" data-tooltip="LinkedIn ↗">
+            <img src="assets/icons/linkedin.svg" width="18" height="18" alt="" />
+          </a>
+          <a class="sidebar__icon-link" href="assets/resume/Kola-Popoola-Resume.pdf" download="Kola-Popoola-Resume.pdf" aria-label="Download Kola's resume (PDF)" data-tooltip="Download resume ↓">
+            <img src="assets/icons/resume.svg" width="13" height="19" alt="" />
+          </a>
+        </div>
+        <p class="clock" aria-label="Current time in Berlin">
+          <span>BER</span><span class="clock__dot">.</span><time data-berlin-clock>21:20</time>
+        </p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <article class="cs">
+        <div class="dots" aria-hidden="true"></div>
+
+        <header class="cs-header">
+          <div class="cs-header__main">
+            <h1 class="cs-header__title">Display Ads - Creative studio</h1>
+            <p class="cs-header__date">January 2026 - April 2026</p>
+            <ul class="cs-tags">
+              <li>UX Design</li>
+              <li>UX Research</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+          <p class="cs-header__summary">Enabling our vendors to create display ad banners themselves, without help from an account manager or an external agency.</p>
+        </header>
+
+        <img class="cs-hero" src="assets/work/creative-studio/hero.svg" width="964" height="285" alt="Delivery Hero" />
+
+        <dl class="cs-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>Product Designer</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>Web &amp; Mobile Web</dd>
+          </div>
+          <div>
+            <dt>Collaborators</dt>
+            <dd>4 Engineers, 1 Product designer, 1 Product manager</dd>
+          </div>
+          <div>
+            <dt>Contributions</dt>
+            <dd>Product design, Research, Information architecture, Interaction design and prototyping</dd>
+          </div>
+        </dl>
+
+        <hr class="cs-divider" />
+
+        <div class="cs-cards">
+          <section class="cs-card">
+            <h2 class="cs-card__title">Goal</h2>
+            <p>Delivery Hero wanted more vendors to set up ads and promotions themselves through the vendor portal. Adoption was going well overall, but one ad type lagged behind: Display (banner) ads. Vendors, especially smaller ones, had no way to create banners that met the specs, so they left it to their account managers instead.</p>
+          </section>
+          <section class="cs-card">
+            <h2 class="cs-card__title">Outcome</h2>
+            <p>We built a creative studio into the existing display booking flow, where vendors create banners themselves by adding their text and product images. They pick from multiple templates and only need to fill in their banner details. Within the launch region, the number of vendors booking display ads themselves each month grew from 10 to 45–50.</p>
+          </section>
+        </div>
+
+        <section class="cs-section">
+          <h2 class="cs-heading">Why are banner ads important?</h2>
+          <p class="cs-text">Banner ads are one of the quickest and easiest ways to build awareness in an app. They’re also versatile: vendors can use them to announce new menus, new deals and much more. On the business side, display is a premium ad type that drives revenue, which is why increasing its adoption was a priority.</p>
+          <div class="cs-phones">
+            <img src="assets/work/creative-studio/app-screen-1.png" width="216" height="470" alt="Talabat home screen with a KFC banner ad" loading="lazy" />
+            <img src="assets/work/creative-studio/app-screen-2.png" width="216" height="470" alt="Talabat home screen with a deals banner ad" loading="lazy" />
+            <img src="assets/work/creative-studio/app-screen-3.png" width="216" height="470" alt="Talabat home screen with a Custard Puffs banner ad" loading="lazy" />
+          </div>
+        </section>
+
+        <section class="cs-section cs-section--tight">
+          <h2 class="cs-heading">Gathering context</h2>
+          <p class="cs-text">Before tackling the problem, the team and I gathered as much context as we could on how to improve self-service booking of Display ads, speaking to both account managers and vendors. With account managers, we wanted to understand how they currently book display ads, from beginning to end. With vendors, we wanted to know what it would take for them to book these ads themselves, so their account managers could focus on more important work.</p>
+          <img class="cs-photo" src="assets/work/creative-studio/workshop.jpg" width="920" height="690" alt="Kola and two colleagues mapping sticky notes on a whiteboard during a workshop" loading="lazy" />
+          <blockquote class="cs-quote">“I want to set up banner ads, but I don’t know how to create the banners, so I just trust my account manager to do it.”</blockquote>
+          <p class="cs-text cs-text--spaced">Our early workshops and research showed that <strong>large vendors rarely worry about banner creation because they have in-house teams to make their banners, while smaller vendors rely heavily on their account managers or avoid display ads altogether.</strong></p>
+          <p class="cs-text">From account managers, the overwhelming feedback was that <strong>although creating banners isn’t hard for them, they would rather spend that time on more important things, and some vendors are slow to respond when asked for feedback on how their product images look in the banners.</strong></p>
+          <p class="cs-text cs-text--spaced-lg">Building on the workshops, I went through existing research data from vendors and account managers and listed the pain points we could tackle directly.</p>
+
+          <div class="cs-cards cs-cards--lists">
+            <section class="cs-card">
+              <h3 class="cs-card__title">Improve vendor experience</h3>
+              <ul class="cs-list">
+                <li><b>Create banners in the booking flow: </b>Vendors create the banner during the flow and attach it straight to the campaign</li>
+                <li><b>Banner templates: </b>Vendors can choose from a range of banner templates</li>
+                <li><b>Product images from the menu: </b>Since this all happens in the vendor portal, vendors can pull in product images they’ve already uploaded to their menu instead of uploading new ones</li>
+                <li><b>Create banners with AI: </b>Generate banners with AI directly in the vendor portal, then make a few tweaks</li>
+              </ul>
+            </section>
+            <section class="cs-card">
+              <h3 class="cs-card__title">Reduce grunt work for AMs</h3>
+              <ul class="cs-list">
+                <li><b>Review banners with the campaign: </b>Account managers only want to review the whole campaign, banners included, once everything has been created and sent for approval. This speeds up their work and gets campaigns live sooner</li>
+                <li><b>Less convincing needed: </b>With an in-house tool for creating banners, account managers spend less time persuading vendors, especially smaller ones, to try display ads.</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="cs-section">
+          <h2 class="cs-heading">The solution</h2>
+          <p class="cs-text">After the workshops and research, the solution was straightforward: we added a new CTA to the display ads flow that opens a creative studio.</p>
+          <div class="cs-cards cs-cards--compare">
+            <section class="cs-card">
+              <h3 class="cs-card__title">What was there initially</h3>
+              <ul class="cs-list">
+                <li>A CTA that let vendors upload a ready-made banner to the campaign, following the banner guidelines (file size, width, height etc.), and send it for approval</li>
+              </ul>
+            </section>
+            <section class="cs-card">
+              <h3 class="cs-card__title">What we added</h3>
+              <ul class="cs-list">
+                <li>A CTA that opens a creative studio, where vendors make banners from scratch using any template they like. Once they save, the banner becomes part of the campaign immediately.</li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Live prototype: real HTML, rendered at 962×771 and scaled down to fit narrower screens -->
+          <div class="proto-stage" data-proto-stage>
+            <div class="proto" data-proto>
+              <div class="proto__sidenav">
+                <img class="proto__logo" src="assets/work/creative-studio/proto/dh-logo.svg" width="33" height="32" alt="" />
+                <div class="proto__nav-group">
+                  <span class="proto__nav-item is-active"><img src="assets/work/creative-studio/proto/nav-shopping-bag.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-dashboard.svg" width="24" height="24" alt="" /></span>
+                </div>
+                <div class="proto__nav-group">
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-bar-chart.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-history.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-star.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-trophy.svg" width="24" height="24" alt="" /></span>
+                </div>
+                <div class="proto__nav-group">
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-megaphone.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-tag.svg" width="24" height="24" alt="" /></span>
+                </div>
+                <div class="proto__nav-group">
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-open-menu.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-time.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-bank.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-school.svg" width="24" height="24" alt="" /></span>
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-settings.svg" width="24" height="24" alt="" /></span>
+                </div>
+                <div class="proto__nav-footer">
+                  <span class="proto__nav-item"><img src="assets/work/creative-studio/proto/nav-chevron-right.svg" width="24" height="24" alt="" /></span>
+                </div>
+              </div>
+
+              <div class="proto__main">
+                <div class="proto__scroll">
+                  <header class="proto__header">
+                    <div>
+                      <p class="proto__back"><img src="assets/work/creative-studio/proto/chevron-left.svg" width="16" height="16" alt="" />Advertising</p>
+                      <h4 class="proto__title">Create a new campaign</h4>
+                    </div>
+                    <div class="proto__actions">
+                      <span class="proto__chip"><img src="assets/work/creative-studio/proto/status-dot.svg" width="16" height="16" alt="" />Open</span>
+                      <span class="proto__chip"><img src="assets/work/creative-studio/proto/help-circle.svg" width="24" height="24" alt="" />Help</span>
+                      <span class="proto__icon-btn"><img src="assets/work/creative-studio/proto/bell.svg" width="24" height="24" alt="" /></span>
+                      <img class="proto__avatar" src="assets/work/creative-studio/proto/avatar.png" width="48" height="48" alt="" />
+                    </div>
+                  </header>
+
+                  <div class="proto__row">
+                    <div class="proto__left">
+                      <!-- Basic details -->
+                      <section class="proto-section">
+                        <h5 class="proto-section__title">Basic details</h5>
+                        <div class="proto-item">
+                          <img src="assets/work/creative-studio/proto/sms-message.svg" width="24" height="24" alt="" />
+                          <div class="proto-item__body">
+                            <p class="proto-item__title">Campaign name</p>
+                            <p class="proto-item__sub">New Campaign 001</p>
+                          </div>
+                          <button class="proto-pill" type="button">Edit</button>
+                        </div>
+                        <div class="proto-item">
+                          <img src="assets/work/creative-studio/proto/date.svg" width="24" height="24" alt="" />
+                          <div class="proto-item__body">
+                            <p class="proto-item__title">Start date</p>
+                            <p class="proto-item__sub">Select start date</p>
+                          </div>
+                          <label class="proto-input">
+                            <input type="text" value="30.06.2025" aria-label="Start date" />
+                            <img src="assets/work/creative-studio/proto/date.svg" width="24" height="24" alt="" />
+                          </label>
+                        </div>
+                        <div class="proto-item">
+                          <img src="assets/work/creative-studio/proto/date.svg" width="24" height="24" alt="" />
+                          <div class="proto-item__body">
+                            <p class="proto-item__title">End date</p>
+                            <p class="proto-item__sub">Select end date</p>
+                          </div>
+                          <label class="proto-input">
+                            <input type="text" value="30.08.2025" aria-label="End date" />
+                            <img src="assets/work/creative-studio/proto/date.svg" width="24" height="24" alt="" />
+                          </label>
+                        </div>
+                        <button class="proto-item proto-item--toggle" type="button" aria-expanded="true" data-proto-toggle>
+                          <img src="assets/work/creative-studio/proto/settings.svg" width="24" height="24" alt="" />
+                          <span class="proto-item__body">
+                            <span class="proto-item__title">Advanced settings</span>
+                            <span class="proto-item__sub">Store selection and Day parting</span>
+                          </span>
+                          <img class="proto-chevron" src="assets/work/creative-studio/proto/chevron-up.svg" width="24" height="24" alt="" />
+                        </button>
+                        <div class="proto-nested">
+                          <div class="proto-item proto-item--nested">
+                            <img src="assets/work/creative-studio/proto/store.svg" width="24" height="24" alt="" />
+                            <div class="proto-item__body">
+                              <p class="proto-item__title">Selected stores</p>
+                              <p class="proto-item__sub">23 stores selected</p>
+                            </div>
+                            <button class="proto-pill" type="button">Edit</button>
+                          </div>
+                          <div class="proto-item proto-item--nested">
+                            <img src="assets/work/creative-studio/proto/history.svg" width="24" height="24" alt="" />
+                            <div class="proto-item__body">
+                              <p class="proto-item__title">Day parting (optional)</p>
+                              <p class="proto-item__sub">-</p>
+                            </div>
+                            <button class="proto-pill" type="button">Add</button>
+                          </div>
+                        </div>
+                      </section>
+
+                      <!-- Ad format -->
+                      <section class="proto-section">
+                        <h5 class="proto-section__title">Ad Format</h5>
+                        <div class="proto-choices" role="radiogroup" aria-label="Ad format">
+                          <label class="proto-choice">
+                            <input type="radio" name="proto-format" value="banner" checked />
+                            <span class="proto-radio" aria-hidden="true"><img src="assets/work/creative-studio/proto/radio-on.svg" width="20" height="20" alt="" /></span>
+                            Banner
+                          </label>
+                          <label class="proto-choice">
+                            <input type="radio" name="proto-format" value="story" />
+                            <span class="proto-radio" aria-hidden="true"><img src="assets/work/creative-studio/proto/radio-on.svg" width="20" height="20" alt="" /></span>
+                            Story
+                          </label>
+                        </div>
+                        <button class="proto-item proto-item--toggle proto-item--ruled" type="button" aria-expanded="true" data-proto-toggle>
+                          <img src="assets/work/creative-studio/proto/settings.svg" width="24" height="24" alt="" />
+                          <span class="proto-item__body">
+                            <span class="proto-item__title">Advanced settings</span>
+                            <span class="proto-item__sub">Placement</span>
+                          </span>
+                          <img class="proto-chevron" src="assets/work/creative-studio/proto/chevron-up.svg" width="24" height="24" alt="" />
+                        </button>
+                        <div class="proto-nested proto-placements">
+                          <label class="proto-check-card">
+                            <input type="checkbox" checked />
+                            <span class="proto-checkbox" aria-hidden="true"><img src="assets/work/creative-studio/proto/checkbox-check.svg" width="20" height="20" alt="" /></span>
+                            <span class="proto-check-card__label">Home Page</span>
+                            <img src="assets/work/creative-studio/proto/info-circle-mini.svg" width="24" height="24" alt="" />
+                          </label>
+                          <label class="proto-check-card">
+                            <input type="checkbox" checked />
+                            <span class="proto-checkbox" aria-hidden="true"><img src="assets/work/creative-studio/proto/checkbox-check.svg" width="20" height="20" alt="" /></span>
+                            <span class="proto-check-card__label">Listing</span>
+                            <img src="assets/work/creative-studio/proto/info-circle-mini.svg" width="24" height="24" alt="" />
+                          </label>
+                          <label class="proto-check-card">
+                            <input type="checkbox" checked />
+                            <span class="proto-checkbox" aria-hidden="true"><img src="assets/work/creative-studio/proto/checkbox-check.svg" width="20" height="20" alt="" /></span>
+                            <span class="proto-check-card__label">Pre-search</span>
+                            <img src="assets/work/creative-studio/proto/info-circle-mini.svg" width="24" height="24" alt="" />
+                          </label>
+                        </div>
+                      </section>
+
+                      <!-- Creatives: the entry point to the creative studio -->
+                      <section class="proto-section proto-section--creatives">
+                        <h5 class="proto-section__title">Creatives</h5>
+                        <p class="proto-section__desc">Add your banner creative by either uploading or creating a new one from scratch</p>
+                        <div class="proto-buttons">
+                          <button class="proto-btn proto-btn--outline proto-hint" type="button" data-proto-action="open-studio">Create banner</button>
+                          <button class="proto-btn proto-btn--outline" type="button">Upload banner</button>
+                        </div>
+                      </section>
+
+                      <!-- Bid & budget -->
+                      <section class="proto-section">
+                        <h5 class="proto-section__title">Bid &amp; Budget</h5>
+                        <div class="proto-item">
+                          <img src="assets/work/creative-studio/proto/voucher.svg" width="24" height="24" alt="" />
+                          <div class="proto-item__body">
+                            <p class="proto-item__title">Bid price <img src="assets/work/creative-studio/proto/info-circle-small.svg" width="16" height="16" alt="" /></p>
+                            <p class="proto-item__sub">Bid price for this campaign</p>
+                          </div>
+                          <label class="proto-input">
+                            <input type="text" inputmode="numeric" value="120" aria-label="Bid price" />
+                            <span class="proto-input__suffix">AED</span>
+                          </label>
+                        </div>
+                        <div class="proto-budget">
+                          <img src="assets/work/creative-studio/proto/money.svg" width="24" height="24" alt="" />
+                          <div class="proto-budget__body">
+                            <p class="proto-item__title">Budget <img src="assets/work/creative-studio/proto/info-circle-small.svg" width="16" height="16" alt="" /></p>
+                            <label class="proto-budget__option">
+                              <input type="radio" name="proto-budget" value="recommended" />
+                              <span class="proto-radio proto-radio--small" aria-hidden="true"><img src="assets/work/creative-studio/proto/radio-on-small.svg" width="16" height="16" alt="" /></span>
+                              AED 10,000
+                              <span class="proto-tag">
+                                <img src="assets/work/creative-studio/proto/sparkles.svg" width="16" height="16" alt="" />
+                                Recommended
+                                <img src="assets/work/creative-studio/proto/tag-info-mini.svg" width="16" height="16" alt="" />
+                              </span>
+                            </label>
+                            <label class="proto-budget__option">
+                              <input type="radio" name="proto-budget" value="custom" checked />
+                              <span class="proto-radio proto-radio--small" aria-hidden="true"><img src="assets/work/creative-studio/proto/radio-on-small.svg" width="16" height="16" alt="" /></span>
+                              Custom
+                            </label>
+                          </div>
+                          <label class="proto-input proto-budget__input">
+                            <input type="text" inputmode="numeric" value="20,000" aria-label="Custom budget" data-proto-budget-input />
+                            <span class="proto-input__suffix">AED</span>
+                          </label>
+                        </div>
+                      </section>
+                    </div>
+
+                    <div class="proto__right">
+                      <section class="proto-preview">
+                        <h5 class="proto-section__title proto-preview__title">How it will look <img src="assets/work/creative-studio/proto/info-circle-mini.svg" width="24" height="24" alt="" /></h5>
+                        <div class="proto-preview__window">
+                          <div class="proto-phone">
+                            <button class="proto-phone__banner proto-hint" type="button" data-proto-action="open-studio">Banner</button>
+                            <div class="proto-phone__skeletons">
+                              <img src="assets/work/creative-studio/proto/skeleton-1.svg" width="168" height="48.713" alt="" />
+                              <img src="assets/work/creative-studio/proto/skeleton-2.svg" width="168" height="48.713" alt="" />
+                              <img src="assets/work/creative-studio/proto/skeleton-3.svg" width="168" height="48.713" alt="" />
+                              <img src="assets/work/creative-studio/proto/skeleton-4.svg" width="168" height="48.713" alt="" />
+                              <img src="assets/work/creative-studio/proto/skeleton-5.svg" width="168" height="48.713" alt="" />
+                              <img src="assets/work/creative-studio/proto/skeleton-5.svg" width="168" height="48.713" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <p class="proto-preview__info">See how your creative will look once you’ve created it.</p>
+                        <div class="proto-pager" hidden data-proto-pager>
+                          <p class="proto-pager__label" aria-live="polite" data-proto-pager-label>English Banner</p>
+                          <div class="proto-pager__controls">
+                            <button class="proto-pager__btn" type="button" aria-label="Previous language" data-proto-pager-step="-1"><img src="assets/work/creative-studio/proto/chevron-left.svg" width="16" height="16" alt="" /></button>
+                            <span class="proto-pager__dots" data-proto-pager-dots></span>
+                            <button class="proto-pager__btn proto-pager__btn--next" type="button" aria-label="Next language" data-proto-pager-step="1"><img src="assets/work/creative-studio/proto/chevron-left.svg" width="16" height="16" alt="" /></button>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="proto-estimate">
+                        <div class="proto-estimate__panel">
+                          <h5 class="proto-estimate__title">Estimated performance <img src="assets/work/creative-studio/proto/info-circle-mini.svg" width="24" height="24" alt="" /></h5>
+                          <dl class="proto-estimate__list">
+                            <div><dt>Reach</dt><dd>40K - 60K</dd></div>
+                            <div><dt>Impressions</dt><dd>120K - 166K</dd></div>
+                            <div><dt>Ad spend</dt><dd>AED 20,000</dd></div>
+                          </dl>
+                          <div class="proto-estimate__progress"><span></span></div>
+                          <p class="proto-estimate__note">This campaign is likely to use your full AED 20,000 budget.</p>
+                        </div>
+                        <p class="proto-estimate__ok"><img src="assets/work/creative-studio/proto/check-circle.svg" width="24" height="24" alt="" />This campaign is set up to deliver the best results.</p>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+
+                <footer class="proto__footer">
+                  <label class="proto-terms">
+                    <input type="checkbox" checked />
+                    <span class="proto-checkbox" aria-hidden="true"><img src="assets/work/creative-studio/proto/checkbox-check.svg" width="20" height="20" alt="" /></span>
+                    <span>I’ve read and agree to the <span class="proto-link">Terms &amp; Conditions</span></span>
+                  </label>
+                  <button class="proto-btn proto-btn--primary" type="button" disabled data-proto-submit>Send for approval</button>
+                </footer>
+
+                <p class="proto__toast" role="status" data-proto-toast></p>
+              </div>
+
+              <!-- Creative studio: full-page overlay opened from "Create banner" or the banner preview (Figma 242:12835) -->
+              <section class="studio" role="dialog" aria-modal="true" aria-label="Create your banner" hidden data-studio>
+                <div class="studio__scroll">
+                  <h4 class="studio__title">Create your banner</h4>
+
+                  <div class="studio__row">
+                    <div class="studio__left">
+                      <label class="studio-name">
+                        <span class="visually-hidden">Banner name</span>
+                        <input type="text" placeholder="Banner name" data-studio-name />
+                      </label>
+
+                      <section class="proto-section studio-card">
+                        <h5 class="studio-card__title">Logo &amp; image</h5>
+                        <div class="studio-upload">
+                          <img src="assets/work/creative-studio/studio/globe.svg" width="24" height="24" alt="" />
+                          <div class="proto-item__body">
+                            <p class="proto-item__title">Logo</p>
+                            <p class="proto-item__sub" data-studio-file-label="logo">Upload your logo</p>
+                          </div>
+                          <label class="studio-chip" data-studio-file-chip="logo">
+                            <input type="file" accept="image/*" data-studio-file="logo" />
+                            <span data-studio-file-action="logo">Upload</span>
+                          </label>
+                        </div>
+                        <div class="studio-upload">
+                          <img src="assets/work/creative-studio/studio/image.svg" width="24" height="24" alt="" />
+                          <div class="proto-item__body">
+                            <p class="proto-item__title">Image</p>
+                            <p class="proto-item__sub" data-studio-file-label="image">Upload your product image</p>
+                          </div>
+                          <label class="studio-chip" data-studio-file-chip="image">
+                            <input type="file" accept="image/*" data-studio-file="image" />
+                            <span data-studio-file-action="image">Upload</span>
+                          </label>
+                        </div>
+                      </section>
+
+                      <section class="proto-section studio-card">
+                        <h5 class="studio-card__title">Text</h5>
+                        <div class="studio-langs" role="tablist" aria-label="Banner language">
+                          <button type="button" role="tab" class="studio-chip is-selected" aria-selected="true" data-studio-lang="en">English</button>
+                          <button type="button" role="tab" class="studio-chip" aria-selected="false" data-studio-lang="ckb">Central Kurdish</button>
+                          <button type="button" role="tab" class="studio-chip" aria-selected="false" data-studio-lang="ar">Arabic</button>
+                        </div>
+                        <label class="studio-field">
+                          <span class="studio-field__head"><span data-studio-label="title">English title</span><span data-studio-count="title">0/28</span></span>
+                          <input type="text" maxlength="28" placeholder="Your title" data-studio-input="title" />
+                        </label>
+                        <label class="studio-field studio-field--ruled">
+                          <span class="studio-field__head"><span data-studio-label="subtitle">English subtitle</span><span data-studio-count="subtitle">0/40</span></span>
+                          <input type="text" maxlength="40" placeholder="Your subtitle" data-studio-input="subtitle" />
+                        </label>
+                      </section>
+
+                      <section class="proto-section studio-card studio-colors">
+                        <h5 class="studio-card__title">Colors</h5>
+                        <div class="studio-colors__row" role="radiogroup" aria-label="Text color">
+                          <span>Text</span>
+                          <span class="studio-swatches">
+                            <button type="button" class="studio-swatch studio-swatch--light" style="--swatch: #ffffff" aria-label="White text" data-studio-color="text" data-value="#ffffff"></button>
+                            <button type="button" class="studio-swatch" style="--swatch: #1e1e20" aria-label="Black text" data-studio-color="text" data-value="#1e1e20"></button>
+                          </span>
+                        </div>
+                        <div class="studio-colors__row" role="radiogroup" aria-label="Image container color">
+                          <span>Image container</span>
+                          <span class="studio-swatches">
+                            <button type="button" class="studio-swatch" style="--swatch: #411517" aria-label="Brown" data-studio-color="container" data-value="#411517"></button>
+                            <button type="button" class="studio-swatch" style="--swatch: #d64c00" aria-label="Orange" data-studio-color="container" data-value="#d64c00"></button>
+                            <button type="button" class="studio-swatch" style="--swatch: #1e1e20" aria-label="Black" data-studio-color="container" data-value="#1e1e20"></button>
+                          </span>
+                        </div>
+                        <div class="studio-colors__row" role="radiogroup" aria-label="Banner background color">
+                          <span>Banner background</span>
+                          <span class="studio-swatches">
+                            <button type="button" class="studio-swatch" style="--swatch: #f7eee3" aria-label="Cream" data-studio-color="background" data-value="#f7eee3"></button>
+                            <button type="button" class="studio-swatch" style="--swatch: #fde3cf" aria-label="Peach" data-studio-color="background" data-value="#fde3cf"></button>
+                            <button type="button" class="studio-swatch" style="--swatch: #e4f1e8" aria-label="Mint" data-studio-color="background" data-value="#e4f1e8"></button>
+                          </span>
+                        </div>
+                      </section>
+                    </div>
+
+                    <div class="studio__right">
+                      <section class="studio-preview">
+                        <h5 class="studio-preview__title">How it will look</h5>
+                        <p class="studio-preview__locale" data-studio-locale>English (UAE)</p>
+                        <div class="studio-banner" data-studio-banner>
+                          <div class="studio-banner__art" data-studio-art>
+                            <span class="studio-banner__container" aria-hidden="true"></span>
+                            <img class="studio-banner__blob" src="assets/work/creative-studio/studio/banner-blob.svg" width="149" height="193" alt="" />
+                            <img class="studio-banner__burst" src="assets/work/creative-studio/studio/banner-burst.svg" width="49" height="46" alt="" />
+                            <div class="studio-banner__photo" hidden data-studio-photo>
+                              <img alt="Uploaded product image" draggable="false" data-studio-preview="image" />
+                            </div>
+                          </div>
+                          <div class="studio-banner__copy" data-studio-copy>
+                            <span class="studio-banner__logo"><span data-studio-logo-text>Logo</span><img alt="" hidden data-studio-preview="logo" /></span>
+                            <p class="studio-banner__title" data-studio-out="title">Title appears here. Up to 3 lines.</p>
+                            <p class="studio-banner__subtitle" data-studio-out="subtitle">Subtitle comes here</p>
+                          </div>
+                        </div>
+                        <label class="studio-scale">
+                          <span>Scale image</span>
+                          <input type="range" min="0" max="100" value="55" data-studio-scale />
+                        </label>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+
+                <footer class="studio__footer">
+                  <button type="button" class="studio__cancel" data-studio-close>Cancel</button>
+                  <button type="button" class="proto-btn proto-btn--primary" disabled data-studio-add>Add banner to campaign</button>
+                </footer>
+              </section>
+            </div>
+          </div>
+          <p class="cs-caption">Creative studio for Display ads live prototype, click on <strong>“Create banner”</strong> or click the banner card on the right hand side to commence.</p>
+        </section>
+
+        <section class="cs-section">
+          <h2 class="cs-heading">Key findings &amp; results</h2>
+          <p class="cs-text">While building this, we realized our preferred final version, an AI creative studio that creates everything for the vendor from their menu items so they only need to edit the text, would take time to ship. As a stopgap, we launched this first version, where vendors upload their own product images and logo and fill in the rest. It all happens within the booking flow, so it’s still seamless and straightforward for vendors.</p>
+          <p class="cs-text">Version 2, which adds AI-generated banners, is currently in progress.</p>
+          <p class="cs-text cs-text--spaced-md">Since we launched version 1, self-booking of display ads has grown more than fourfold. In the region where we launched it, an average of <strong>45–50 vendors now book display ads themselves every month</strong>, up from 10 before. We expect adoption to grow even further once the final version launches and vendors can create banners with AI.</p>
+        </section>
+
+        <section class="cs-section cs-section--v2">
+          <h2 class="cs-heading">Sneak peek of v2</h2>
+          <img class="cs-v2" src="assets/work/creative-studio/v2-sneak-peek.png" width="964" height="803" alt="Version 2 of the creative studio: an Edit your banner screen with four AI-generated banner options" loading="lazy" />
+        </section>
+
+        <section class="cs-section cs-section--conclusion">
+          <h2 class="cs-heading">Conclusion</h2>
+          <p class="cs-text">This was a very important feature for Delivery Hero. Leading it, talking to real users and getting their feedback helped us reach our goal, and I learnt a lot about how these businesses approach creating ads.</p>
+          <p class="cs-text">A detailed case study presentation, with metrics, prototypes and more insight into my process, is available on request.</p>
+        </section>
+
+        <a class="cs-next" href="estimates-and-recos.html">Next : Display estimates and recos</a>
+      </article>
+
+      <footer class="footer">
+        <p>&copy; Kolawole Popoola 2026</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="prototypes/creative-studio.js"></script>
+</body>
+</html>

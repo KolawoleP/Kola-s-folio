@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Kola Popoola</title>
+  <meta name="description" content="Kola Popoola is a Senior Product Designer at Delivery Hero in Berlin, previously at Kuda, MAX and Fieldinsight." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Hold the page hidden until main.js sets up the scroll reveal (shown anyway after 3s as a fallback)
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("reveal-pending");
+      setTimeout(function () { document.documentElement.classList.remove("reveal-pending"); }, 3000);
+    }
+  </script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <img src="assets/icons/logo.svg" width="37" height="36" alt="" />
+        <span class="brand__text">
+          <span class="brand__name">Kola Popoola</span>
+          <span class="brand__role">Software Designer</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <a class="nav__item" href="index.html">
+          <img src="assets/icons/nav-home-inactive.svg" width="15" height="16" alt="" />
+          Home
+        </a>
+        <a class="nav__item" href="work.html">
+          <img src="assets/icons/nav-work.svg" width="16" height="16" alt="" />
+          Work
+        </a>
+        <a class="nav__item is-active" href="about.html" aria-current="page">
+          <img src="assets/icons/nav-about-active.svg" width="16" height="17" alt="" />
+          About
+        </a>
+        <a class="nav__item" href="photos.html">
+          <img src="assets/icons/nav-photos.svg" width="17" height="15.2564" alt="" />
+          Photos
+        </a>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__social">
+          <a class="sidebar__icon-link" href="mailto:kolapopoola4@gmail.com" aria-label="Email Kola" data-tooltip="kolapopoola4@gmail.com">
+            <img src="assets/icons/mail.svg" width="20" height="14" alt="" />
+          </a>
+          <a class="sidebar__icon-link" href="https://www.linkedin.com/in/kola-popoola-b61664143/" target="_blank" rel="noopener" aria-label="Kola on LinkedIn" data-tooltip="LinkedIn ↗">
+            <img src="assets/icons/linkedin.svg" width="18" height="18" alt="" />
+          </a>
+          <a class="sidebar__icon-link" href="assets/resume/Kola-Popoola-Resume.pdf" download="Kola-Popoola-Resume.pdf" aria-label="Download Kola's resume (PDF)" data-tooltip="Download resume ↓">
+            <img src="assets/icons/resume.svg" width="13" height="19" alt="" />
+          </a>
+        </div>
+        <p class="clock" aria-label="Current time in Berlin">
+          <span>BER</span><span class="clock__dot">.</span><time data-berlin-clock>21:20</time>
+        </p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="about">
+        <div class="dots" aria-hidden="true"></div>
+
+        <div class="about__aside">
+          <figure class="about-polaroid">
+            <img src="assets/images/kola-portrait.jpg" alt="Portrait of Kola Popoola" />
+            <figcaption>hey! it’s me again</figcaption>
+          </figure>
+        </div>
+
+        <div class="about__content">
+          <h1 class="about__title">I’m a designer who cares a lot.</h1>
+          <div class="about__bio">
+            <p>I care about the details, how things feel to use, and the little moments that can make a product feel delightful. A lot of my work is about taking complex problems and turning them into experiences that feel simple, thoughtful, and easy to use.</p>
+            <p>Currently, I’m a Senior Product Designer at Delivery Hero, working on adtech products with some really talented people. Before that, I led design for business banking at Kuda and worked across logistics and transportation at MAX and Fieldinsight.</p>
+            <p>Working across different industries has shaped how I think about design. It’s taught me when to zoom out and think about the bigger picture, and when to get into the details that make an experience feel just right. Ultimately, I want to make things that are useful, well considered, and genuinely nice to use.</p>
+            <p>My background is in Computer Science, which has also shaped the way I think about products and how they’re built.</p>
+            <p>These days, I live in Berlin. Outside of work, I collect vinyl records, take pictures of things I find interesting, write, play sports, and play a lot of video games.</p>
+          </div>
+
+          <section class="about__section" aria-labelledby="experience-heading">
+            <h2 class="about__heading" id="experience-heading">Work experience</h2>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <p class="timeline__label">2023 - Now</p>
+                <div>
+                  <h3 class="timeline__role">Senior Product Designer at <a href="https://www.deliveryhero.com/" target="_blank" rel="noopener">Delivery Hero</a></h3>
+                  <p class="timeline__text">Designing adtech products for our vendors in various regions, both for our Q-commerce and vendor businesses</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <p class="timeline__label">2021 - 2022</p>
+                <div>
+                  <h3 class="timeline__role">Product Designer at <a href="https://www.kuda.com/" target="_blank" rel="noopener">Kuda Bank</a></h3>
+                  <p class="timeline__text">Spearheaded efforts on the first version of Kuda’s business banking product, for big and small business owners</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <p class="timeline__label">2019 - 2021</p>
+                <div>
+                  <h3 class="timeline__role">Product Designer at <a href="https://www.maxdrive.ai/" target="_blank" rel="noopener">MAX</a></h3>
+                  <p class="timeline__text">Worked on the MAX team, focusing more on the driver and consumer experience, making it more intuitive and reducing driver churn rate.</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <p class="timeline__label">2018 - 2019</p>
+                <div>
+                  <h3 class="timeline__role">Product Designer at <a href="https://fieldinsight.co/" target="_blank" rel="noopener">Delivery Science</a></h3>
+                  <p class="timeline__text">Worked on the rebrand of Delivery science design system while I was here, helping structure the new era for the business</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="about__section about__section--stack" aria-labelledby="stack-heading">
+            <h2 class="about__heading" id="stack-heading">Stack</h2>
+            <dl class="stack">
+              <div class="stack__row">
+                <dt class="timeline__label">Design</dt>
+                <dd>Product Design · Interaction Design · Design Systems · Figma · Paper</dd>
+              </div>
+              <div class="stack__row">
+                <dt class="timeline__label">AI &amp; Code</dt>
+                <dd>Cursor · Claude · HTML · CSS</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section class="about__section about__section--reading" aria-labelledby="reading-heading">
+            <h2 class="about__heading" id="reading-heading">Currently reading</h2>
+            <ul class="books">
+              <li class="book">
+                <a class="book__link" href="http://amazon.de/Design-That-Scales-Creating-Sustainable/dp/1959029215" target="_blank" rel="noopener" data-hover-label="View on Amazon ↗">
+                  <span class="book__shelf">
+                    <img class="book__cover book__cover--scales" src="assets/about/book-design-that-scales.png" alt="Design That Scales by Dan Mall" />
+                  </span>
+                </a>
+              </li>
+              <li class="book">
+                <a class="book__link" href="https://www.amazon.de/Design-Storytelling-Ellen-Lupton/dp/194230319X" target="_blank" rel="noopener" data-hover-label="View on Amazon ↗">
+                  <span class="book__shelf">
+                    <img class="book__cover book__cover--storytelling" src="assets/about/book-design-is-storytelling.jpg" alt="Design Is Storytelling by Ellen Lupton" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="about__section about__section--listening" aria-labelledby="listening-heading">
+            <h2 class="about__heading" id="listening-heading">Currently listening</h2>
+            <ul class="records">
+              <li class="record">
+                <a class="record__link" href="https://open.spotify.com/album/0l8zYqoUeBYg47Gmevq9HZ?si=cb59dbf5a5754529" target="_blank" rel="noopener" data-hover-label="Listen on Spotify ↗">
+                  <span class="record__disc">
+                    <img src="assets/about/album-1.png" width="90" height="90" alt="Olivia Dean album on Spotify" />
+                  </span>
+                </a>
+              </li>
+              <li class="record">
+                <a class="record__link" href="https://open.spotify.com/album/0NxA1D1taWpPdIc6uIlAi9?si=I78xOGxATVuTMQwxL5cVbg" target="_blank" rel="noopener" data-hover-label="Listen on Spotify ↗">
+                  <span class="record__disc">
+                    <img src="assets/about/album-2.png" width="90" height="90" alt="Sade album on Spotify" />
+                  </span>
+                </a>
+              </li>
+              <li class="record">
+                <a class="record__link" href="https://open.spotify.com/album/5u7OrPu6BbadcZNWuH10VT?si=rixZjhqBQ3mLoI3atTfFkA" target="_blank" rel="noopener" data-hover-label="Listen on Spotify ↗">
+                  <span class="record__disc">
+                    <img src="assets/about/album-3.png" width="90" height="90" alt="Leon Thomas album on Spotify" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; Kolawole Popoola 2026</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
