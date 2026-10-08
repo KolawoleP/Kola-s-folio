@@ -18,6 +18,8 @@
   --active-icon-filter: none;
   --nav-text: #92a0b6;
   --nav-icon-filter: none;
+  --vinyl: #2d2b49;
+  --book-border: var(--border);
   --figure-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
   color-scheme: dark;
 
@@ -48,6 +50,9 @@
   /* The white "current page" nav icons turn near-black (#17172d) */
   --active-icon-filter: brightness(0.12);
   --nav-text: var(--text-muted);
+  /* Records stay a dark vinyl colour so the spin is easy to see on white */
+  --vinyl: #2d2b49;
+  --book-border: transparent;
   /* Darken the #92a0b6 nav icons to match the light-theme text grey */
   --nav-icon-filter: brightness(0.72) saturate(1.3);
   --figure-shadow: 0 4px 24px rgba(16, 16, 33, 0.08), 0 1px 3px rgba(16, 16, 33, 0.06);
@@ -1105,7 +1110,7 @@ a.card:hover .card__media img {
   height: 171px;
   overflow: hidden;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--book-border);
   border-radius: 20px;
   transform: rotate(0.3deg);
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
@@ -1175,7 +1180,7 @@ a.card:hover .card__media img {
   /* faint grooves on the vinyl */
   background:
     repeating-radial-gradient(circle, transparent 0 2px, rgba(255, 255, 255, 0.035) 2px 3px),
-    var(--surface-raised);
+    var(--vinyl);
   animation: record-spin 12s linear infinite;
 }
 
@@ -2729,6 +2734,15 @@ a.work-card:focus-visible {
     --record-size: 100px;
     gap: 16px;
     margin-left: 0;
+  }
+
+  /* Book cards: a little smaller on phones so two fit side by side */
+  .books {
+    gap: 16px;
+  }
+
+  .book {
+    zoom: 0.82;
   }
 
   .gallery__row,
