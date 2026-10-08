@@ -7,6 +7,13 @@ from pathlib import Path
 
 
 class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
+    # Serve /work from work.html, matching Vercel's cleanUrls
+    def translate_path(self, path):
+        local = super().translate_path(path)
+        if not Path(local).exists() and Path(local + ".html").is_file():
+            return local + ".html"
+        return local
+
     def end_headers(self):
         self.send_header("Cache-Control", "no-store, must-revalidate")
         super().end_headers()
