@@ -8,6 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    // Apply the saved theme (dark by default) before the page paints
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      document.documentElement.dataset.theme = t === "light" ? "light" : "dark";
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <script>
     // Hold the page hidden until main.js sets up the scroll reveal (shown anyway after 3s as a fallback)
@@ -21,7 +29,8 @@
   <div class="layout">
     <aside class="sidebar">
       <a class="brand" href="/">
-        <img src="assets/icons/logo.svg" width="37" height="36" alt="" />
+        <img class="brand__logo" src="assets/icons/logo.svg" width="37" height="36" alt="" />
+        <img class="brand__logo brand__logo--light" src="assets/icons/logo-light.svg" width="37" height="36" alt="" />
         <span class="brand__text">
           <span class="brand__name">Kola Popoola</span>
           <span class="brand__role">Software Designer</span>

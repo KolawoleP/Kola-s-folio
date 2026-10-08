@@ -253,7 +253,7 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
     "h1", "h2", "h3", ".cs-header__date", ".cs-header__summary", ".cs-tags", ".contact-menu", ".hero__text",
     ".eyebrow", ".work-page__intro", ".work-page__divider", ".cs-meta", ".cs-divider", ".cs-text", ".cs-quote", ".cs-caption", ".cs-bullets li",
     ".kuda-flow-caption", ".est-figure figcaption", ".page-header__text", ".about__bio p",
-    ".timeline__item", ".stack__row", ".cs-next", ".footer p",
+    ".timeline__item", ".stack__row", ".cs-next",
   ].join(", ");
 
   const main = document.querySelector(".main");
@@ -320,4 +320,60 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
   );
 
   tagged.forEach((el) => observer.observe(el));
+})();
+
+// Theme switch: Light or Dark (dark by default). The choice is remembered on this device.
+(() => {
+  const footer = document.querySelector(".footer");
+  if (!footer) return;
+  const root = document.documentElement;
+  const ICONS = {
+    light: '<circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.25M8 13.25v1.25M1.5 8h1.25M13.25 8h1.25M3.4 3.4l.9.9M11.7 11.7l.9.9M3.4 12.6l.9-.9M11.7 4.3l.9-.9"/>',
+    dark: '<path d="M13.5 9.6A5.75 5.75 0 0 1 6.4 2.5a5.75 5.75 0 1 0 7.1 7.1Z"/>',
+  };
+  const LABELS = { light: "Light", dark: "Dark" };
+
+  const group = document.createElement("div");
+  group.className = "theme-switch";
+  group.setAttribute("role", "radiogroup");
+  group.setAttribute("aria-label", "Colour theme");
+  const buttons = Object.keys(LABELS).map((key) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "theme-switch__option";
+    button.setAttribute("role", "radio");
+    button.dataset.theme = key;
+    button.innerHTML = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[key]}</svg>${LABELS[key]}`;
+    button.addEventListener("click", () => set(key));
+    group.append(button);
+    return button;
+  });
+  footer.append(group);
+
+  // Arrow keys move between options, like other radio groups
+  group.addEventListener("keydown", (event) => {
+    if (!["ArrowRight", "ArrowDown", "ArrowLeft", "ArrowUp"].includes(event.key)) return;
+    event.preventDefault();
+    const next = buttons.find((b) => b.dataset.theme !== root.dataset.theme);
+    set(next.dataset.theme);
+    next.focus();
+  });
+
+  function sync() {
+    buttons.forEach((b) => {
+      const on = b.dataset.theme === root.dataset.theme;
+      b.setAttribute("aria-checked", String(on));
+      b.tabIndex = on ? 0 : -1;
+    });
+  }
+
+  function set(theme) {
+    root.dataset.theme = theme;
+    try {
+      localStorage.setItem("theme", theme);
+    } catch {}
+    sync();
+  }
+
+  sync();
 })();

@@ -8,10 +8,50 @@
   --text-muted: #92a0b6;
   --border: rgba(146, 160, 182, 0.28);
   --divider: rgba(146, 160, 182, 0.16);
+  --dots: rgba(214, 214, 214, 0.08);
+  --tag: #343253;
+  --panel: rgba(32, 31, 43, 0.52);
+  --panel-solid: #1e1c30;
+  --menu-bg: #17172d;
+  --menu-text: #ffffff;
+  --menu-hover: rgba(255, 255, 255, 0.08);
+  --active-icon-filter: none;
+  --nav-text: #92a0b6;
+  --nav-icon-filter: none;
+  --figure-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  color-scheme: dark;
 
   --sidebar-width: 194px;
   --content-width: 1240px;
   --font: "Host Grotesk", system-ui, sans-serif;
+}
+
+/* Light theme (Figma 285:14691). main.js sets data-theme from the Auto / Light / Dark toggle. */
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-glow: #e3e2ff;
+  --surface: #f3f2ff;
+  --surface-raised: #f8f8ff;
+  --polaroid: #ffffff;
+  --text: #101021;
+  --text-muted: oklch(0.554 0.046 257.417); /* ≈ #62748e */
+  --border: rgba(146, 160, 182, 0.28);
+  --divider: rgba(146, 160, 182, 0.16);
+  --dots: rgba(214, 214, 214, 0.6);
+  --tag: #edecff;
+  --panel: #f3f2ff;
+  --panel-solid: #edecff;
+  /* The contact dropdown stays dark on the light theme */
+  --menu-bg: #020116;
+  --menu-text: #ffffff;
+  --menu-hover: rgba(255, 255, 255, 0.1);
+  /* The white "current page" nav icons turn near-black (#17172d) */
+  --active-icon-filter: brightness(0.12);
+  --nav-text: var(--text-muted);
+  /* Darken the #92a0b6 nav icons to match the light-theme text grey */
+  --nav-icon-filter: brightness(0.72) saturate(1.3);
+  --figure-shadow: 0 4px 24px rgba(16, 16, 33, 0.08), 0 1px 3px rgba(16, 16, 33, 0.06);
+  color-scheme: light;
 }
 
 *,
@@ -135,7 +175,7 @@ figure {
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.14px;
-  color: var(--text-muted);
+  color: var(--nav-text);
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -248,7 +288,7 @@ figure {
   left: -3px;
   width: calc(100% + 37px);
   height: 396px;
-  background-image: radial-gradient(circle, rgba(214, 214, 214, 0.08) 1.5px, transparent 1.6px);
+  background-image: radial-gradient(circle, var(--dots) 1.5px, transparent 1.6px);
   background-size: 21.75px 21.75px;
   background-position: -9.4px -9.4px;
   pointer-events: none;
@@ -364,8 +404,7 @@ figure {
   flex-direction: column;
   min-width: 216px;
   padding: 6px;
-  background: var(--surface);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--menu-bg);
   border-radius: 16px;
   box-shadow:
     0 24px 48px -16px rgba(0, 0, 0, 0.7),
@@ -398,7 +437,7 @@ figure {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  color: var(--text);
+  color: var(--menu-text);
   text-align: left;
   text-decoration: none;
   white-space: nowrap;
@@ -413,7 +452,7 @@ figure {
 
 .contact-menu__item:hover,
 .contact-menu__item:focus-visible {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--menu-hover);
   outline: none;
 }
 
@@ -489,7 +528,6 @@ figure {
   padding: 19px 21px 22px 19px;
   overflow: hidden;
   background: var(--surface);
-  border: 1px solid var(--border);
   border-radius: 20px;
   text-decoration: none;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -497,7 +535,6 @@ figure {
 
 a.card:hover {
   transform: translateY(-4px);
-  border-color: rgba(146, 160, 182, 0.5);
 }
 
 a.card:focus-visible {
@@ -1324,7 +1361,7 @@ a.card:hover .card__media img {
 
 .cs-tags li {
   padding: 3px 16px;
-  background: #343253;
+  background: var(--tag);
   border-radius: 30px;
   font-size: 14px;
   line-height: 20px;
@@ -1391,7 +1428,7 @@ a.card:hover .card__media img {
 .cs-card {
   min-height: 296px;
   padding: 27px 32px 32px;
-  background: rgba(32, 31, 43, 0.52);
+  background: var(--panel);
   border-radius: 30px;
 }
 
@@ -1835,7 +1872,7 @@ a.card:hover .card__media img {
   z-index: -1;
   right: -48px;
   left: -48px;
-  background: #1e1c30;
+  background: var(--panel-solid);
   border-radius: 20px;
 }
 
@@ -1916,7 +1953,7 @@ a.card:hover .card__media img {
 .est-points li {
   min-height: 218px;
   padding: 23px 27px 27px;
-  background: rgba(32, 31, 43, 0.52);
+  background: var(--panel);
   border-radius: 30px;
 }
 
@@ -1997,6 +2034,7 @@ a.card:hover .card__media img {
 .est-board {
   margin-top: 54px;
   border-radius: 30px;
+  box-shadow: var(--figure-shadow);
 }
 
 .est-options {
@@ -2286,6 +2324,79 @@ a.work-card:focus-visible {
   line-height: 25px;
   letter-spacing: 0.14px;
   text-align: left;
+}
+
+/* ---------- Theme switch (footer, right-aligned) ---------- */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  text-align: left;
+}
+
+.theme-switch {
+  display: inline-flex;
+  gap: 2px;
+  margin-left: auto;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.theme-switch__option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-switch__option svg {
+  flex: none;
+}
+
+.theme-switch__option:hover {
+  color: var(--text);
+}
+
+.theme-switch__option[aria-checked="true"] {
+  background: rgba(146, 160, 182, 0.2);
+  color: var(--text);
+}
+
+.theme-switch__option:focus-visible {
+  outline: 2px solid var(--text-muted);
+  outline-offset: 1px;
+}
+
+/* Logo: separate artwork for the light theme (Figma 285:14691) */
+.brand__logo--light,
+:root[data-theme="light"] .brand__logo:not(.brand__logo--light) {
+  display: none;
+}
+
+:root[data-theme="light"] .brand__logo--light {
+  display: block;
+}
+
+/* Nav icons are drawn for the dark theme; recolour them on the light theme */
+.nav__item img {
+  filter: var(--nav-icon-filter);
+}
+
+.nav__item.is-active img {
+  filter: var(--active-icon-filter);
 }
 
 /* ---------- Scroll reveal (driven by main.js) ---------- */
