@@ -1,4 +1,4 @@
-// Live Berlin clock in the sidebar
+// Live Berlin clock in the sidebar (and the copy in the mobile footer)
 const clock = document.querySelector("[data-berlin-clock]");
 
 if (clock) {
@@ -11,8 +11,10 @@ if (clock) {
 
   const tick = () => {
     const now = new Date();
-    clock.textContent = format.format(now);
-    clock.dateTime = now.toISOString();
+    document.querySelectorAll("[data-berlin-clock]").forEach((el) => {
+      el.textContent = format.format(now);
+      el.dateTime = now.toISOString();
+    });
   };
 
   tick();
@@ -332,6 +334,14 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
     dark: '<path d="M13.5 9.6A5.75 5.75 0 0 1 6.4 2.5a5.75 5.75 0 1 0 7.1 7.1Z"/>',
   };
   const LABELS = { light: "Light", dark: "Dark" };
+
+  // Phones hide the sidebar footer, so the footer gets a copy of the email / LinkedIn / resume icons and the clock
+  const sidebarFooter = document.querySelector(".sidebar__footer");
+  if (sidebarFooter) {
+    const connect = sidebarFooter.cloneNode(true);
+    connect.className = "footer__connect";
+    footer.prepend(connect);
+  }
 
   const group = document.createElement("div");
   group.className = "theme-switch";
